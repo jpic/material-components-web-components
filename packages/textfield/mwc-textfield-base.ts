@@ -618,6 +618,8 @@ export abstract class TextFieldBase extends FormElement {
 
     super.firstUpdated();
 
+    this.mdcFoundation.setAutovalidate(false);
+
     if (this.validateOnInitialRender) {
       this.reportValidity();
     }
